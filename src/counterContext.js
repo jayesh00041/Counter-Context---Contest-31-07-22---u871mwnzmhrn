@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext , useState} from "react";
 
 
 
@@ -6,7 +6,7 @@ import React, { createContext } from "react";
 
 const counterContext = createContext()
 
-
+const [count, setCount] = useState(0);
 const CounterStateContext = (props) => {
 
     return (
